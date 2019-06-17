@@ -1,0 +1,36 @@
+
+  
+  /* 样式修改 */
+  .cost-subject-content .gic-input-search {
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  .cost-subject-box .integral-belong-title{
+
+  }
+
+  /* 右侧树 */
+  .integral-belong .integral-belong-title{
+    
+  }
+
+  /*选择分组归属*/
+  .move-treenodes-content .div.zTreeDemoBackground{
+    width: auto;
+    height: auto;
+  }
+  .move-treenodes-content ul.ztree{
+    border: none;
+  }
+  .move-treenodes-content .tree-dialog-content .content_wrap-tree{
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .move-treenodes-content .ztree li a:hover{
+    color: #333;
+  }
+  .move-treenodes-content .dialogtree.ztree li a.curSelectedNode{
+    color: #1890ff
+  }

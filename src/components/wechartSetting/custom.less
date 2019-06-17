@@ -1,0 +1,67 @@
+@import "../../../static/css/variable.less";
+.custom{
+  min-width: 1200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  &-header{
+    min-width: 1200px;
+    height: 65px;
+    position: fixed;
+    padding: 0 20px;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: @customnavcolor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      flex: 0 0 700px;
+    }
+    .logoimg{
+      display: inline-block;
+      line-height: 65px;
+      img{
+        vertical-align: middle;
+      }
+    }
+    .logotext{
+      margin-left: 20px;
+    }
+    .logobtn{
+      padding: 10px 20px;
+      float: left;
+      border: 1px solid @main-color;
+      border-radius: 4px;
+      margin-left: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+    .btn1{
+      box-sizing: border-box;
+      color: @main-color;
+      &:hover{
+        background-color: @main-color;
+        color: #fff;
+      }
+    }
+    .btn2{
+      color: #fff;
+      background-color: @main-color;
+      &:hover{
+        color: @main-color;
+        background-color: transparent;
+      }
+    }
+  }
+}
+/* 去掉表格的最后一条线 */
+.table-no-line-wrap::before{
+  height: 0
+}

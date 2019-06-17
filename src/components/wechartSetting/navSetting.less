@@ -1,0 +1,310 @@
+@import "../../../static/css/variable.less";
+.giccontent{
+  min-width: 1200px;
+}
+.setting{
+  padding: 25px;
+  // margin-bottom: 40px;
+  &-wrap{
+    display: flex;
+    padding: 24px;
+    background: #fff;
+    justify-content: center;
+  }
+  &-left{
+    flex: 0 0 600px;
+    padding: 24px;
+    background-color: @contentbgcolor;
+  }
+  &-item{
+    min-height: 376px;
+    padding: 24px;
+    border: 1px solid @bordercolor;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius:2px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &:hover{
+      border: 1px solid transparent;
+      box-shadow: 0 0 10px @bordercolor;
+    }
+    &:hover .setting-delete{
+      display: block;
+    }
+    .item{
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+    .itemname{
+      flex: 0 0 60px;
+      font-size: 14px;
+      color: #606266;
+      margin-right: 15px;
+      text-align: right;
+    }
+    .itemtext{
+      flex: 0 0 230px;
+      font-size: 14px;
+      color: @main-color;
+    }
+    .itemswitch{
+      flex: 1;
+      text-align: right;
+    }
+    .errortip{
+      margin-left: 10px;
+      color: red;
+    }
+    .itemmBottom{
+      margin-bottom: 30px;
+    }
+    .itemmTop{
+      margin-top: 30px;
+    }
+    .item2{
+      display: flex;
+      align-items: flex-start;
+    }
+    .itemimg{
+      display: flex;
+      width: 72px;
+      height: 72px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: 1px solid @bordercolor;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .nav-img{
+      > p{
+        color: #606266;
+        width: 74px;
+        text-align: center;
+      }
+    }
+    .itemurl{
+      margin-top: 10px;
+      margin-left: 76px;
+      font-size: 14px;
+      color: #555;
+    }
+    .itemurlcopy{
+      color: @main-color;
+      cursor: pointer;
+    }
+    .itemimgmr{
+      margin-right: 20px;
+    }
+    .itemradio{
+      flex: 1;
+      line-height: 30px;
+    }
+    .itembtn{
+      display: inline-block;
+      margin-right: 10px;
+      float: left;
+      min-width: 88px;
+      min-height: 30px;
+      border: 1px solid @bordercolor;
+      border-radius: 4px;
+      background-color: #f0f2f5;
+      cursor: pointer;
+      padding: 0 10px;
+    }
+    .itemedit{
+      cursor: pointer;
+      color: @main-color;
+    }
+  }
+  &-delete{
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: #bbb;
+  }
+  &-addnav{
+    width: 100%;
+    height: 34px;
+    margin: 25px 0;
+    line-height: 34px;
+    font-size: 14px;
+    border: 1px dashed @bordercolor;
+    border-radius: 2px;
+    text-align: center;
+    color: #606266;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover{
+      border: 1px dashed @main-color;
+      color: @main-color;
+    }
+  }
+  .add-nav-tip{
+    font-size: 12px;
+    margin-top: 30px;
+    color: #909399
+  }
+  &-right{
+    flex: 0 0 374px;
+    height: 670px;
+    margin-left: 60px;
+    position: relative;
+    border: 1px solid @bordercolor;
+    .navbottom{
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      border-top: 1px solid @bordercolor;
+      align-items: center;
+      justify-content: center;
+      &-item{
+        flex: 1;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+.iconwrap{
+  font-size: 14px;
+  .title{
+    margin-top: 15px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  .iconselect{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    &-item{
+      flex: 0 0 110px;
+      height: 100px;
+      text-align: center;
+      cursor: pointer;
+      &:hover{
+        background-color: @contentbgcolor;
+      }
+    }
+    &-curitem{
+      background-color: @contentbgcolor;
+    }
+    &-img{
+      margin-top: 30px;
+    }
+    &-name{
+      line-height: 30px;
+    }
+  }
+  .iconstyle{
+    display: flex;
+    align-items: center;
+    &-item1{
+      flex: 0 0 65px;
+    }
+    &-item2{
+      flex: 0 0 32px;
+      width: 32px;
+      height: 32px;
+      padding: 4px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      &:hover{
+        border: 1px solid @main-color;
+      }
+    }
+    .styleone{
+      color: #f64346;
+      background-color: #f64346;
+    }
+    .styletwo{
+      color: #000;
+      background-color: #000;
+    }
+    .stylethree{
+      color: #476968;
+      background-color: #476968;
+    }
+    &-text{
+      width: 100%;
+      height: 100%;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 2px;
+      &:hover{
+        color: #fff;
+      }
+    }
+    .curstyle{
+      border: 1px solid @main-color;
+      .iconstyle-text{
+        color: #fff;
+      }
+    }
+    .mright{
+      margin-right: 5px;
+    }
+  }
+}
+// .footlogo{
+//   position: relative;
+//   padding-bottom: 60px !important;
+//   margin-top: 40px;
+//   text-align: center;
+//   &-text{
+//     font-size: 14px;
+//     color: #909399;
+//   }
+// }
+.footwrap{
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  left: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-top: 1px solid @bordercolor;
+  background: #fff;
+  transition: all .2s ease;
+}
+.mLeftwrap{
+  left: 64px;
+  transition: all .3s ease;
+}
+
+.el-button--primary.is-plain{
+  background: #04143a;
+  border-color: #1890ff;
+}
+
+.el-icon-circle-close{
+  color: #c0c4cc
+}
+
+// 类型
+.itemradio /deep/ .el-select{
+  width: 230px;
+}

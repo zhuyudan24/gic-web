@@ -1,0 +1,622 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+/*input,textarea{
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}*/
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1 !important;
+}
+/*html,body{
+  overflow-y: hidden;
+}*/
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*去除input属性type=number时候后面的额上下小尾巴*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+a {
+  color: #606266;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+a:hover{
+  color: #1890ff !important
+}
+li {
+  list-style: none;
+}
+/*---滚动条默认显示样式--*/ 
+::-webkit-scrollbar-thumb{  
+   background-color:#e4e7ed;  
+   height:50px;
+   -webkit-border-radius:6px;
+}  
+/*---鼠标点击滚动条显示样式--*/ 
+::-webkit-scrollbar-thumb:hover{  
+   background-color:#c8cbd3;  
+   height:50px;  
+   -webkit-border-radius:6px;  
+}  
+/*---滚动条大小--*/ 
+::-webkit-scrollbar{  
+   width:6px;  
+   height:6px;  
+}  
+/*---滚动框背景样式--*/ 
+::-webkit-scrollbar-track-piece{  
+   background-color:#f0f2f5;  
+   -webkit-border-radius:6px;  
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  /*background-color: #ffffff;*/
+  background-color: #f2f3f4;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+.btn-default {
+  color: #333;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+.btn {
+  font-size: 12px;
+  border-radius: 2px;
+  padding: 8px 16px;
+  height: 32px;
+  line-height: 14px;
+}
+.btn-new {
+  color: #333;
+  border: 1px solid #fede29;
+  background-color: #fede29;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:before, .clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: "";
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.pagewrap{
+  margin: 20px 0;
+  text-align: right;
+}
+.dialogwrap{
+  position: relative;
+}
+/*.dialogwrap:before{
+   position: absolute;
+   left: -20px;
+   top: -20px;
+   right: -20px;
+   content: '';
+   border-bottom: 1px solid #dedede;
+ }*/
+.dialogcontent{
+  padding: 0 10px;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: #fff !important; /* #FAFFBD; */
+  /* -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -moz-box-shadow: 0 0 0 1000px white inset !important; */
+  background-image: none;
+  color: rgb(0, 0, 0);
+}
+ .el-table th{
+  background: #f1f3f7!important;
+}
+.slide-fade-enter-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  opacity: 0;
+}
+/* 丹 新加*/
+#app,#index,#content{
+  height: 100%;
+}
+
+/* table 的表头 -- 背景色 */
+.el-table thead tr,.el-table thead th{
+  background: #f1f3f7;
+}
+
+/* 头部 隐藏 */
+.navheader a.itemlink.bottom {
+  /*display: none;*/
+}
+/* 头部弹出框样式 */
+.user-form-dialog .el-dialog__body {
+  padding: 30px 20px 0;
+}
+.user-form-dialog .el-dialog__header {
+  padding: 0 20px;
+  height: 54px;
+}
+.pass-form-dialog .el-dialog__body {
+  padding: 30px 20px 0;
+}
+.pass-form-dialog .el-dialog__header {
+  padding: 0 20px;
+  height: 54px;
+}
+/*左侧侧边栏  --  兼容火狐*/
+.leftBar-wrap .cardmenu-item .el-submenu__title,.leftBar-wrap .cardmenu-item .el-menu-item,.leftBar-wrap .cardmenu-item .el-submenu .el-menu-item{
+  height: 40px;
+  line-height: 40px;
+}
+.leftBar-wrap .el-submenu__title:hover,.leftBar-wrap .el-menu{
+  background-color: #020b21;
+}
+
+.leftBar-wrap .cardmenu-item li.el-menu-item:hover i{
+  /*background-color: #1890ff;*/
+  color: #fff;
+}
+
+.leftBar-wrap .cardmenu-item li.el-menu-item:hover span{
+  /*background-color: #1890ff;*/
+  color: #fff;
+}
+
+.leftBar-wrap .cardmenu-item li.el-submenu:hover i{
+  /*background-color: #1890ff;*/
+  color: #fff;
+}
+
+.leftBar-wrap .cardmenu-item li.el-submenu:hover span{
+  /*background-color: #1890ff;*/
+  color: #fff;
+}
+
+.leftBar-wrap .cardmenu-item li.el-submenu .el-menu-item:hover label{
+  /*background-color: #1890ff;*/
+  color: #fff;
+  cursor: pointer;
+}
+/* end */
+/* 面包屑 */
+.breadcrumb{
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 -1px 10px #dfdfdf;
+}
+.breadcrumb .breadcrumb-title{
+  margin: 30px 0 10px 0;
+  font-size: 20px;
+}
+#content{
+  min-width: 1400px
+}
+/*有侧边栏的 右侧 */
+.content-wrap{
+  height: 100%;
+  display: flex;
+  -webkit-display: flex;
+  -o-display: flex;
+  -moz-display: flex;
+}
+.left-menu{
+  flex: 0 0 200px;
+  width: 200px;
+}
+.right-right{
+  flex: 1;
+  overflow: auto;
+}
+.right-wrap{
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  /*min-width: 1200px;*/
+}
+.right-content{
+  padding: 24px;
+  min-height: calc(100% - 200px)
+}
+.right-box{
+  background: #fff;
+  padding: 24px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+/* 无侧边栏的底部 */
+.bottom-wrap{
+    padding: 24px;
+    color: #606266;
+    font-size: 14px;
+}
+.bottom-content-wrap{
+    /*background: #fff;
+    padding: 24px;*/
+}
+/*提示文字*/
+.tip-text{
+  font-size: 12px;
+  color: #909399;
+  position: absolute;
+  bottom: -30px;
+}
+
+/*微信文本*/
+.my-textarea a{
+  color: #1890ff
+}
+
+.user-header-pop {
+  min-width: 121px;
+}
+
+.el-popover.user-header-pop {
+  min-width: 121px;
+  box-sizing: border-box;
+}
+.el-row{
+  font-size: 0
+}
+
+.el-form-item .el-input__inner{
+  padding-right: 45px;
+}
+.flex-wrap {
+  display: flex;
+}
+.flex-con {
+  flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  -flex-direction:column;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+
+/* 暂无数据 ElementUI */
+.el-table__empty-block .el-table__empty-text{
+  position: static;
+}
+.no-data-wrap{
+  text-align: center;
+  padding: 80px 0;
+}
+.no-data-wrap .no-data-icon{
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+.no-data-wrap .no-data-icon img{
+  width:100%;
+  height:100%;
+}
+.no-data-wrap p {
+  color: #909399;
+}
+/* 提示文字的icon */
+.tooltip-icon{
+  color: #909399;
+  font-size: 14px !important;
+}
+.tooltip-icon:hover{
+  color: #909399;
+}
+/* 分页器 */
+.pagination{
+  text-align: right;
+  margin: 30px 0 10px 0;
+}
+/* 固定在底部的按钮 */
+.btn-fixed-two{
+  padding-left: 200px;
+}
+.btn-fixed-two .m-left{
+  padding-left: 64px;
+}
+.btn-fixed-wrap{  /*没有左侧侧边栏*/
+  position: fixed;
+  height: 56px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  left: 0;
+  background: #fff;
+  border-top: 1px solid #E4E7ED;
+  padding-top: 12px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  z-index: 2
+}
+
+/* 总体的内容 */
+.total-wrap{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+/* 底部logo与悬浮按钮 */
+.footer{
+  padding-bottom: 60px
+}
+
+/**/
+input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+input::-moz-input-placeholder {
+  font-size: 14px;
+}
+input::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+/* 错误文字提示 */
+.error-input .el-input__inner, .error-input .el-input__inner:focus,.error-input .el-input__inner:hover, 
+.error-input .el-textarea__inner, .error-input .el-textarea__inner:focus,.error-input .el-textarea__inner:hover{
+  border-color: #f56c6c;
+}
+.error-tip{
+  color: #f56c6c;
+  font-size: 12px;
+  line-height: 1;
+  padding-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+/* 左侧侧边栏 */
+
+.left-aside-contain /deep/ .el-submenu__title:hover {
+  background-color: #020b21;
+}
+.el-menu.el-menu--popup {
+    background: #020b21;
+    border-radius: 4px;
+}
+
+.height-24{
+  width: 100%;
+  height: 24px;
+  background: #f0f2f5;
+}
+
+/* 小程序 */
+.containerwrap{
+  min-height: calc(100% - 200px);
+  padding: 24px !important;
+  background: transparent;
+  margin: 0;
+}
+.containerwrap .xcx-container-wrap{
+  padding: 24px;
+  background: #fff;
+}
+.xcx-wrap{
+  height: 100%
+}
+
+.left-menu /deep/ .left-aside-contain,.xcxindex-left /deep/ .left-aside-contain{
+  height: 100% !important;
+}
+
+/* 去掉表格的最后一条线 */
+.table-no-line-wrap.el-table::before{
+  height: 0
+}
+
+/* 规范2.0 */
+/* 状态点 */
+.dm-status--success:before {
+  background-color: #52c41a;
+}
+.dm-status--info:before {
+  background-color: #d9d9d9;
+}
+.dm-status--primary:before {
+  background-color: #1890ff;
+}
+.dm-status--error:before{
+  background-color: #f5222d;
+}
+/* 下拉多选的高度 */
+/* .el-select .el-input--suffix .el-input__inner{
+  height: 32px !important;
+} */
+/* 文字按钮撑高的问题 */
+table /deep/ .el-button--text{
+  padding: 0;
+}
+.el-table .cell p{
+  line-height: 18px;
+}
+/* 分页器尺寸 */
+.pagination /deep/ .el-pagination .el-select .el-input .el-input__inner{
+  height: 28px !important;
+}
+
+/*文本域高度*/
+.el-textarea /deep/  .el-textarea__inner{
+  height: 94px;
+}
+
+.el-popper{
+  box-sizing: content-box;
+}
+
+.apply-danger-wrap .el-dialog__header{
+  padding: 0 20px;
+  height: 54px;
+  border-bottom: 1px solid #dcdfe6;
+}
+.apply-danger-wrap .el-dialog__body{
+  padding: 0;
+}
+
+/* 解决合并行时鼠标移入样式问题 */
+.el-table .hovered-row {
+  background: #f5f7fa;
+}
+/* 表格中的第一行 第二行的样式 */
+.table-first-item{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.table-second-item{
+  font-size: 13px;
+  color: #aaa;
+}
